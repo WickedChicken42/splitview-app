@@ -26,6 +26,7 @@ class MasterViewController: UITableViewController {
 
                 let controller = (segue.destination as! UINavigationController).topViewController as! ImagePresentationVC
                 controller.image = imageArray[indexPath.row]
+                
                 // Shows the full screen button in the detail screen
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -46,6 +47,7 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
+        // Pulling values from our static data
         cell.backgroundColor = colorsArray[indexPath.row]
         cell.textLabel!.text = namesArray[indexPath.row].description
 
