@@ -13,6 +13,7 @@
 		278A8927215BEAF9009E523C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278A8925215BEAF9009E523C /* Main.storyboard */; };
 		278A8929215BEAFA009E523C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278A8928215BEAFA009E523C /* Assets.xcassets */; };
 		278A892C215BEAFA009E523C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278A892A215BEAFA009E523C /* LaunchScreen.storyboard */; };
+		278A8936215BF1D8009E523C /* images+names+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278A8935215BF1D8009E523C /* images+names+colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		278A8928215BEAFA009E523C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		278A892B215BEAFA009E523C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		278A892D215BEAFA009E523C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278A8935215BF1D8009E523C /* images+names+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "images+names+colors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		278A891E215BEAF9009E523C /* splitview-app */ = {
 			isa = PBXGroup;
 			children = (
+				278A8934215BF00A009E523C /* View */,
+				278A8933215BF001009E523C /* Controller */,
 				278A891F215BEAF9009E523C /* AppDelegate.swift */,
-				278A8921215BEAF9009E523C /* MasterViewController.swift */,
-				278A8923215BEAF9009E523C /* DetailViewController.swift */,
 				278A8925215BEAF9009E523C /* Main.storyboard */,
 				278A8928215BEAFA009E523C /* Assets.xcassets */,
 				278A892A215BEAFA009E523C /* LaunchScreen.storyboard */,
 				278A892D215BEAFA009E523C /* Info.plist */,
+				278A8935215BF1D8009E523C /* images+names+colors.swift */,
 			);
 			path = "splitview-app";
+			sourceTree = "<group>";
+		};
+		278A8933215BF001009E523C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				278A8923215BEAF9009E523C /* DetailViewController.swift */,
+				278A8921215BEAF9009E523C /* MasterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		278A8934215BF00A009E523C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			files = (
 				278A8924215BEAF9009E523C /* DetailViewController.swift in Sources */,
 				278A8922215BEAF9009E523C /* MasterViewController.swift in Sources */,
+				278A8936215BF1D8009E523C /* images+names+colors.swift in Sources */,
 				278A8920215BEAF9009E523C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
